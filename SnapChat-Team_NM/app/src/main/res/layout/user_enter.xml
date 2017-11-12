@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/enterFrame">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/enterLayout"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12"
+            android:id="@+id/imageView"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/snapchat_loginimage"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:layout_weight="0.44"
+            android:background="#ff4c4c"
+            android:id="@+id/login"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:layout_weight="0.44"
+            android:background="#4ca6ff"
+            android:id="@+id/register"
+            />
+    </LinearLayout>
+
+</FrameLayout>
+

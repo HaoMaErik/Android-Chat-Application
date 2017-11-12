@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/EditLayout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/Draw">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Additional"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivShow"
+                android:scaleType="fitXY"
+                />
+
+        </FrameLayout>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btDedit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/paintbrush"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/common_action_bar_splitter"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:text="T"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="#E0E0E0"
+            android:id="@+id/btTedit"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btEedit"
+            android:layout_toStartOf="@+id/btEedit"
+            android:background="@color/zxing_transparent"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/common_google_signin_btn_text_light_disabled" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivShowImage"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btEedit"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btDedit"
+            android:layout_toStartOf="@+id/btDedit"
+            android:background="@drawable/happy"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/common_action_bar_splitter"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btCancel"
+            android:background="@drawable/esc"
+            android:backgroundTint="@color/common_action_bar_splitter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btSave"
+            android:background="@android:drawable/stat_sys_download_done"
+            android:backgroundTint="@color/common_action_bar_splitter"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/btSave"
+            android:layout_toRightOf="@+id/btEedit"
+            android:layout_toEndOf="@+id/btEedit"
+            android:id="@+id/btSend"
+            android:background="@drawable/send"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:layout_marginBottom="15dp" />
+        <ImageButton
+            android:text="5 Sec"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/fivesec"
+            android:layout_above="@+id/bttimer"
+            android:layout_alignLeft="@+id/bttimer"
+            android:layout_alignStart="@+id/bttimer"
+            android:visibility="gone"
+            android:background="@drawable/looks1"
+            android:backgroundTint="@color/common_action_bar_splitter" />
+
+        <ImageButton
+            android:text="4 Sec"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/foursec"
+            android:layout_above="@+id/fivesec"
+            android:layout_alignLeft="@+id/fivesec"
+            android:layout_alignStart="@+id/fivesec"
+            android:visibility="gone"
+            android:background="@drawable/looks2"
+            android:backgroundTint="@color/common_action_bar_splitter" />
+
+        <ImageButton
+            android:text="3 Sec"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/thirdsec"
+            android:layout_above="@+id/foursec"
+            android:layout_alignLeft="@+id/foursec"
+            android:layout_alignStart="@+id/foursec"
+            android:background="@drawable/looks3"
+            android:visibility="gone"
+            android:backgroundTint="@color/common_action_bar_splitter" />
+
+        <ImageButton
+            android:text="2 Sec"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/secondsec"
+            android:layout_above="@+id/thirdsec"
+            android:layout_alignLeft="@+id/thirdsec"
+            android:layout_alignStart="@+id/thirdsec"
+            android:visibility="gone"
+            android:background="@drawable/looks4"
+            android:backgroundTint="@color/common_action_bar_splitter" />
+
+        <ImageButton
+            android:text="1 Sec"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/onesec"
+            android:layout_above="@+id/secondsec"
+            android:layout_alignLeft="@+id/secondsec"
+            android:layout_alignStart="@+id/secondsec"
+            android:visibility="gone"
+            android:background="@drawable/looks5"
+            android:backgroundTint="@color/common_action_bar_splitter" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Input text here"
+            android:ems="10"
+            android:id="@+id/etEdit"
+            android:singleLine="true"
+            android:layout_marginBottom="17dp"
+            android:layout_above="@+id/btSave"
+            android:layout_toLeftOf="@+id/btSend"
+            android:layout_toStartOf="@+id/btSend"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:visibility="gone"
+            android:textColor="#2df822"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="Add"
+            android:id="@+id/btADDText"
+            android:layout_alignBottom="@+id/etEdit"
+            android:layout_toRightOf="@+id/etEdit"
+            android:layout_marginRight="60dp"
+            android:visibility="gone"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView"
+            android:layout_below="@+id/btDedit"
+            android:layout_centerInParent="true"
+            android:numColumns="4"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="5dp"
+            android:animateLayoutChanges="true"
+            android:stretchMode="columnWidth"
+            android:smoothScrollbar="true"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:text="timer"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/bttimer"
+            android:layout_alignBottom="@+id/btSave"
+            android:layout_toRightOf="@+id/btSave"
+            android:layout_toEndOf="@+id/btSave"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:background="@drawable/alarmb"
+            android:backgroundTint="@color/common_action_bar_splitter" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:id="@+id/AddedMe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/addedMeTop"
+        android:background="#ffff">
+
+        <ImageButton
+            android:id="@+id/ibBacktoFriends"
+            android:background="@drawable/leftbottom"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Added Me"
+            android:textColor="#9a32cd"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addedMeTop"
+        android:id="@+id/FriendRequestList"></ListView>
+
+</RelativeLayout>

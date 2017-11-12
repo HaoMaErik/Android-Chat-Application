@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6ec1f2">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/world"
+                android:padding="0dp"
+                android:paddingEnd="95dp"
+                android:paddingBottom="0dp"
+                android:paddingStart="108dp"
+                android:paddingTop="1dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:id="@+id/imageView01"
+                android:layout_marginTop="50dp" />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/lifestyle"
+                android:id="@+id/imageView02"
+                android:padding="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="206dp"
+                android:layout_marginTop="50dp"
+                android:paddingRight="80dp"
+                android:paddingStart="80dp"
+                android:paddingEnd="130dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:layout_height="350dp"
+                android:layout_width="250dp" />
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/travel"
+                android:id="@+id/imageView03"
+                android:layout_marginTop="402dp"
+                android:padding="0dp"
+                android:paddingEnd="60dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:paddingStart="80dp"
+                android:paddingTop="80dp" />
+
+            <ImageView
+                android:layout_height="350dp"
+                android:id="@+id/imageView04"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/entertainment"
+                android:padding="0dp"
+                android:layout_marginLeft="142dp"
+                android:layout_marginTop="402dp"
+                android:paddingEnd="250dp"
+                android:paddingRight="250dp"
+                android:layout_width="300dp" />
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/finance"
+                android:id="@+id/imageView05"
+                android:padding="0dp"
+                android:layout_marginTop="753dp" />
+
+            <ImageView
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/sport"
+                android:padding="0dp"
+                android:layout_marginTop="753dp"
+                android:layout_marginLeft="221dp"
+                android:id="@+id/imageView06"
+                android:layout_width="330dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize"
+                android:id="@+id/toolbar2" />
+
+            <TextView
+                android:text="Discover"
+                android:textSize="26dp"
+                android:textColor="#9a32cd"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="Finance"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:layout_alignBaseline="@+id/textView9"
+                android:layout_alignBottom="@+id/textView9"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Sport"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_alignTop="@+id/imageView06"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_alignEnd="@+id/textView4"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Travel"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_marginTop="56dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_alignTop="@+id/imageView03"
+                android:layout_alignRight="@+id/imageView03"
+                android:layout_alignEnd="@+id/imageView03"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Entertainment"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_toEndOf="@+id/textView7"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Lifestyle"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/toolbar2"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_marginTop="41dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="World"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignRight="@+id/imageView03"
+                android:layout_alignEnd="@+id/imageView03"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageButton"
+                android:background="@drawable/leftbottom"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="#9a32cd"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:id="@+id/ivChatImageIcon"
+            android:background="#50d5e0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivChatImageIcon"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:id="@+id/tvChatImageUsername"
+                android:textSize="10dp"
+                android:textColor="#6e0428"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivChatImage"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:id="@+id/tvImageSendTime"
+                android:textSize="10dp"
+                android:textColor="@color/abc_secondary_text_material_light"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

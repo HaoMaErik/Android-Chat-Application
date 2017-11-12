@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/abc_list_selector_background_transition_holo_light"
+        android:id="@+id/addFriendTop">
+
+        <ImageButton
+            android:id="@+id/ibBacktoProfile"
+            android:background="@drawable/leftbottom"
+            android:backgroundTint="#9a32cd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="Add Friends"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="#9a32cd" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/addByUsername"
+        android:text="Add by Username"
+        android:layout_below="@id/addFriendTop"
+        android:background="@color/zxing_transparent" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/addbySnapcode"
+        android:text="Add by Snapcode"
+        android:layout_below="@id/addByUsername"
+        android:background="@color/zxing_transparent" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/addNearby"
+        android:text="Add Nearby"
+        android:layout_below="@id/addbySnapcode"
+        android:background="@color/zxing_transparent" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btMyQRcode"
+        android:text="My Snapcode"
+        android:layout_below="@id/addNearby"
+        android:background="@color/zxing_transparent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addFriendBottom"
+        android:layout_below="@id/btMyQRcode"
+        android:background="@drawable/add_friend_image" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addFriendTop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2"
+        android:background="@android:drawable/ic_search_category_default"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black_overlay"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/snapchat_userenter"
+        android:backgroundTint="@color/black_overlay"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_height="30dp"
+        android:layout_above="@+id/btMyQRcode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:background="@drawable/loc"
+        android:backgroundTint="@color/black_overlay"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/addFriendBottom"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6"
+        android:id="@+id/imageView7"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/nickname"
+        android:backgroundTint="@color/black_overlay"
+        android:layout_marginLeft="5dp" />
+
+
+</RelativeLayout>

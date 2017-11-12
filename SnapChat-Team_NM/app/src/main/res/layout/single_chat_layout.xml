@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/singleChatFrame">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:background="#ffffff"
+            android:id="@+id/rltopside">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat"
+                android:id="@+id/tvChatName"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="30dp"
+                android:textColor="#50bcff" />
+
+            <ImageButton
+                android:id="@+id/ibGoBack"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rightbottom"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@android:color/holo_blue_bright" />
+
+            <ImageButton
+                android:id="@+id/ibUserInfo"
+                android:layout_alignBottom="@+id/ibGoBack"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/clear_replay"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@android:color/holo_blue_bright" />
+        </RelativeLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatList"
+            android:layout_below="@id/rltopside"
+            android:layout_above="@+id/rlSendChat">
+
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:id="@+id/rlSendChat">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/etType"
+                android:hint="Send a chat"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ibImage"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_below="@+id/etType"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@android:drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ibPhone"
+                android:background="@android:drawable/ic_menu_call"
+                android:layout_marginRight="33dp"
+                android:layout_marginEnd="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/ibCamera"
+                android:layout_toStartOf="@+id/ibCamera" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/ibCamera"
+                android:background="@drawable/abc_btn_radio_material"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/abc_tint_switch_track" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ibVideo"
+                android:background="@android:drawable/presence_video_online"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_alignBottom="@+id/ibCamera"
+                android:layout_toRightOf="@+id/ibCamera"
+                android:layout_toEndOf="@+id/ibCamera"
+                android:backgroundTint="@color/common_action_bar_splitter" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ibBitmoji"
+                android:layout_below="@+id/etType"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/happy"
+                android:backgroundTint="@color/common_action_bar_splitter" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

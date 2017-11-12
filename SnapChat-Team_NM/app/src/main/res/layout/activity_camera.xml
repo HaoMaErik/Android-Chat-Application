@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erik.snapchat_team_nm.MainActivity"
+    android:id="@+id/rlCamera">
+
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraSurface" />
+
+
+    <ImageButton
+        android:text="Take photo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/btTake"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/abc_btn_radio_material"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btChat"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/message"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btStory"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bluron"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark" />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btReverse"
+        android:layout_alignTop="@+id/btFlash"
+        android:layout_alignRight="@+id/btStory"
+        android:layout_alignEnd="@+id/btStory"
+        android:background="@drawable/camera"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/btMemory"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/abc_btn_radio_to_on_mtrl_000"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark" />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btProfile"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/socialsnapchatoutline"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark" />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/btFlash"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/flashoff"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

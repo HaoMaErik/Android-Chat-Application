@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SnapChat-Team_NM</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_story">StoryActivity</string>
+
+    <string name="title_activity_discovery">DiscoveryActivity</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="auth_failed">fail</string>
+    <string name="auth_succ">Success</string>
+    <string name="add_success">Request sent</string>
+    <string name="app_label">Search</string>
+    <string name="search_hint">Search Me</string>
+    <string name="search">Search</string>
+    <string name="title_activity_discovery_detail">DiscoveryDetail</string>
+</resources>

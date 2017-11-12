@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlSendPhoto"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlSendPhotoTop">
+
+        <ImageButton
+            android:id="@+id/ibBacktoEdit"
+            android:background="@drawable/leftbottom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Send To..."
+            android:textColor="#64B5F6"
+            android:gravity="center"
+            android:id="@+id/tvSendTo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/ibToAddFriends"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/follow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@android:color/holo_blue_bright" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tvMyStory"
+        android:layout_below="@id/rlSendPhotoTop"
+        android:text="My Story"
+        android:textColor="#9a32cd"
+        android:gravity="center"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tvMyMemories"
+        android:layout_below="@id/tvMyStory"
+        android:text="My Memories"
+        android:textColor="#9a32cd"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvMyMemories"
+        android:id="@+id/SendToFriendsListView"></ListView>
+
+</RelativeLayout>

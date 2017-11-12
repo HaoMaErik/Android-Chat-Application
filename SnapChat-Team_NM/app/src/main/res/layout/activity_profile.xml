@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profileFrame">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/snapchat_snapcode"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:text="Username"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btpName"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <Button
+            android:text="Added me"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btAddme"
+            android:layout_below="@id/btpName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/zxing_transparent" />
+
+        <Button
+            android:text="     Add Friends"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btAddfriend"
+            android:layout_below="@id/btAddme"
+            android:layout_centerHorizontal="true"
+            android:background="@color/zxing_transparent" />
+
+        <Button
+            android:text="    My Friends"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btMyfriends"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/btAddfriend"
+            android:backgroundTint="@color/zxing_transparent"
+            android:background="@color/zxing_transparent" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/btAddfriend"
+            android:layout_alignLeft="@+id/btAddfriend"
+            android:layout_alignStart="@+id/btAddfriend"
+            android:id="@+id/imageView3"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/follow"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
+
+        <ImageView
+            android:layout_below="@+id/btAddfriend"
+            android:layout_alignLeft="@+id/btMyfriends"
+            android:layout_alignStart="@+id/btMyfriends"
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/clear_replay"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:id="@+id/imageAddMe"
+            android:layout_weight="1"
+            android:background="@drawable/happy"
+            android:layout_below="@+id/btpName"
+            android:layout_alignLeft="@+id/btAddme"
+            android:layout_alignStart="@+id/btAddme"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:text=""
+            android:id="@+id/btLogOut"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/zxing_viewfinder_laser"
+            android:layout_below="@+id/btMyfriends"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+    </RelativeLayout>
+</FrameLayout>

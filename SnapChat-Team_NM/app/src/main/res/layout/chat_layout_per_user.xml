@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:id="@+id/ivChatIcon"
+            android:background="#fb0303" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivChatIcon"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:id="@+id/tvChatUsername"
+                android:textSize="10dp"
+                android:textColor="#6e0428"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flChatContent"
+                android:layout_below="@id/tvChatUsername">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="loading..."
+                    android:id="@+id/tvContent"
+                    android:textSize="20dp"
+                    android:textColor="#2e1215" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/ivChatImage"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading..."
+                android:id="@+id/tvSendTime"
+                android:textSize="10dp"
+                android:layout_below="@id/flChatContent"
+                android:textColor="@color/abc_secondary_text_material_light"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

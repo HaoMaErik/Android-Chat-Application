@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:id="@+id/GPSlocation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/GPSlocationTop"
+        android:background="#ffff">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ibBack"
+            android:background="@android:drawable/ic_media_rew"
+            android:backgroundTint="#9a32cd" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Nearby User found:"
+            android:textColor="#9a32cd"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/GPSlocationTop"
+        android:id="@+id/NearbyList"></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:text="Location:"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send location"
+        android:id="@+id/btSendlocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBottom="@+id/btFindNearby"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/btFindNearby"
+        android:text="Get Nearby Users...."
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btSendlocation"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+</RelativeLayout>

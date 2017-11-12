@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chatFrame">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:background="@android:color/holo_blue_light"
+                android:id="@+id/rltop">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:textStyle="bold"
+                    android:id="@+id/tvChat"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30dp"
+                    android:textColor="#ffffff" />
+
+                <ImageButton
+                    android:id="@+id/ibToCamera"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/photo"
+                    android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <ImageButton
+                    android:id="@+id/ibNewChat"
+                    android:layout_alignBottom="@+id/ibToCamera"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cell_0_10_480"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/common_google_signin_btn_text_dark_default" />
+            </RelativeLayout>
+
+            <SearchView
+                android:id="@+id/sv"
+                android:layout_below="@id/rltop"
+                android:backgroundTint="@android:color/transparent"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </SearchView>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userList"
+                android:layout_below="@id/sv">
+
+            </ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+                <ImageButton
+                    android:id="@+id/ibCurrent"
+                    android:background="@drawable/message"
+                    android:layout_marginRight="29dp"
+                    android:layout_marginEnd="29dp"
+                    android:backgroundTint="@android:color/holo_blue_light"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ibBelowCamera"
+                    android:layout_toStartOf="@+id/ibBelowCamera" />
+
+                <ImageButton
+                    android:id="@+id/ibBelowCamera"
+                    android:background="@drawable/abc_btn_radio_to_on_mtrl_000"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/common_plus_signin_btn_text_dark_disabled" />
+
+                <ImageButton
+                    android:id="@+id/ibToStory"
+                    android:background="@drawable/bluron"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/common_plus_signin_btn_text_dark_disabled"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ibBelowCamera"
+                    android:layout_toEndOf="@+id/ibBelowCamera" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</FrameLayout>

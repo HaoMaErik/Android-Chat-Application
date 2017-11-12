@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:id="@+id/AddFriendByUsername">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/addUsernameTop"
+        android:background="#ffff">
+
+        <ImageButton
+            android:id="@+id/ibBacktoAddFriends"
+            android:background="@drawable/leftbottom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/common_plus_signin_btn_text_dark_disabled"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/etSearchUsername"
+            android:layout_toLeftOf="@+id/btSearch"
+            android:layout_toRightOf="@+id/ibBacktoAddFriends" />
+
+        <Button
+        android:id="@+id/btSearch"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/ic_search_category_default"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/common_plus_signin_btn_text_dark_disabled" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addUsernameTop"
+        android:id="@+id/UsernameList"></ListView>
+
+</RelativeLayout>
